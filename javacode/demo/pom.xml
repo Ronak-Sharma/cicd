@@ -19,16 +19,4 @@
             <scope>test</scope>
     </dependency>
   </dependencies>
-    <distributionManagement>
-            <repository>
-                    <id>weekend</id>
-                    <name>weekend-release</name>
-                    <url>http://52.66.206.172:8081/repository/weekend-release/</url>
-            </repository>
-            <snapshotRepository>
-                    <id>weekend</id>
-                    <name>weekend-snapshot</name>
-                    <url>http://52.66.206.172:8081/repository/weekend-snapshot/</url>
-            </snapshotRepository>
-    </distributionManagement>
 </project>
