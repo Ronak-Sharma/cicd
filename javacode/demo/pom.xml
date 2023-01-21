@@ -1,22 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project>
   <modelVersion>4.0.0</modelVersion>
   <groupId>demo</groupId>
   <artifactId>demoapp</artifactId>
-  <version>1.4.3</version>
+  <version>1.4.3-SNAPSHOT</version>
   <dependencies>
-          <!-- https://mvnrepository.com/artifact/io.airlift/testing -->
+        <!-- https://mvnrepository.com/artifact/io.airlift/testing -->
         <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-          <dependency>
-                  <groupId>org.testng</groupId>
-                  <artifactId>testng</artifactId>
-    <version>7.4.0</version>
-    <scope>test</scope>
-    </dependency>
     <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.13.2</version>
-            <scope>test</scope>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
+      <version>7.4.0</version>
+      <scope>test</scope>
     </dependency>
   </dependencies>
+  <distributionManagement>
+    <repository>                                <!-- this is release version -->
+    <id>weekend</id>
+    <name>Internal Releases</name>
+    <url>http://3.109.144.21:8081/repository/weekend-release/</url>
+    </repository>
+    <snapshotRepository>                        <!-- this is snapshot version -->
+      <id>weekend</id>
+      <name>Internal Releases</name>
+      <url>http://3.109.144.21:8081/repository/weekend-snapshot/</url>
+    </snapshotRepository>
+  </distributionManagement>
 </project>
